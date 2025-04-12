@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence Education Service</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #1A1F36;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    header {
+      background-color: #1A1F36;
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    header img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    section {
+  padding: 3rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  background-color: white;
+}
+
+/* Custom background colors by section */
+section:nth-of-type(1) { background-color: #E3F2FD; }   /* Light Blue */
+section:nth-of-type(2) { background-color: #FFF9C4; }   /* Light Yellow */
+section:nth-of-type(3) { background-color: #E8F5E9; }   /* Light Green */
+section:nth-of-type(4) { background-color: #FCE4EC; }   /* Light Pink */
+section:nth-of-type(5) { background-color: #F3E5F5; }   /* Lavender */
+section:nth-of-type(6) { background-color: #E0F7FA; }   /* Aqua Blue */
+section:nth-of-type(7) { background-color: #FFF3E0; }   /* Soft Orange */
+section:nth-of-type(8) { background-color: #F1F8E9; }   /* Mint */
+section:nth-of-type(9) { background-color: #FFF9C4; }   /* Light Yellow */
+section:nth-of-type(10) { background-color: #E3F2FD; }  /* Light Blue */
+section:nth-of-type(11) { background-color: #FBE9E7; }  /* Warm Peach */
+    .section-title {
+      font-size: 1.75rem;
+      margin-bottom: 1rem;
+      color: #3D8AE2;
+    }
+    
+    
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    li::before {
+  content: '✔';
+  color: #2E8B57;
+  margin-right: 0.5rem;
+}
+    .footer {
+      background-color: #1A1F36;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+    }
+    form {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      max-width: 600px;
+      margin-top: 1rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #3D8AE2;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #326fbd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAB+ElEQVR4nO3dQYqDMBCA4Weh+z+yYpGlIkulS+O+IfNPlLxLAbkSn3nyz1TzApZwEAAAAAAAAAAADwNm1l2q94sjb5dpXTpiHdsWe3kC62Sl+90KOLgTdr7qPSxyq7ujkblFv37lFWXM3Xmrj9U3vtxF9lHb89WyRvw/B9JtH7K9hvGZtE3vqTR0GuW9QXSG7XVKYcb9C05vZJujXCK5r3yJTOvNdyYrrZ9F9Tnq7Ij7F6mxueaOcv6ptNu+9sE5zsyKu3rgH4Wa6cQuEkl8cMn4/vhls/cNcvce4JZnqcd1tEOq+bAazbrE/CeWw7w8exDe8Odkf+3CdWaJbmx0yxrFe9fZ7uJuWjM+vCPlPa3c+AeX3q7Jbq4uXeyz67XmczEr11G0FPVfL1Kq6MEd6x2b61btuUZ3NZYv6fn9TWrm5mvEXN7v1R2yxf1wEAAAAAAAAAAD4h/8B0o4zPK+ZmecAAAAASUVORK5CYII=" alt="Sequence Education Service Logo">
+    <h1>SES</h1>
+    <p>Sequence Education Service – Helping Adults Unlock University & Funding</p>
+  </header>
+
+  <div class="container">
+<section style="background-color: #E3F2FD;">
+  <div class="section-title">🎯 Who We Help</div>
+  <p>Many adults in the UK are eligible for up to £20,000 per year in student finance — and don’t even know it. We support learners aged 21–60 who haven’t completed a university degree. If you're working part-time, on benefits, or earning under £30,000, we can help you apply to university and change your future.</p>
+</section>
+<section style="background-color: #E8F5E9;">
+  <div class="two-column" style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="flex: 1 1 48%;">
+      <div class="section-title">📋 Entry Requirements</div>
+      <ul>
+        <li>Age: 21 to 60</li>
+        <li>B1 level English or above</li>
+        <li>British Citizen, Settled Status, or Leave to Remain</li>
+        <li>No formal qualifications required</li>
+        <li>Lived in the UK for 3+ years</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 48%;">
+      <div class="section-title">🗂️ Documents Needed</div>
+      <ul>
+        <li>Passport or ID</li>
+        <li>Share Code (if not British)</li>
+        <li>Proof of Address</li>
+        <li>CV (if available)</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section style="background-color: #F3E5F5;">
+  <div class="two-column" style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <div style="flex: 1 1 48%;">
+      <div class="section-title">🤝 Our Support Includes:</div>
+      <ul>
+        <li>One-to-one guidance from enquiry to enrolment</li>
+        <li>Help securing student finance</li>
+        <li>Ongoing academic support after you start</li>
+        <li>Multilingual support available</li>
+      </ul>
+    </div>
+    <div style="flex: 1 1 48%;">
+      <div class="section-title">🛠️ How It Works</div>
+      <ol>
+        <li>Get in touch with us for a free consultation</li>
+        <li>We help you explore suitable courses and universities</li>
+        <li>Submit your documents and application with our guidance</li>
+        <li>Apply for student finance – we support this step too</li>
+        <li>Receive your offer and enrol in your chosen course</li>
+        <li>Begin your studies with ongoing academic support from us</li>
+      </ol>
+    </div>
+  </div>
+</section>
+<section style="background-color: #FFF9C4;">
+<div class="section-title">💬 What Our Students Say</div>
+      <p><em>“I didn’t know I could even go to university at my age — now I’m in my second year studying Business thanks to Sequence.”</em><br>– Ahmed, London</p>
+      <p><em>“Sequence helped me through every step, from my application to getting my finance approved. I now study Law part-time while still working.”</em><br>– Sarah, Birmingham</p>
+      <p><em>“I was shocked to find out I could get nearly £20,000 a year in support. Without Sequence, I wouldn't have known how to apply or where to start.”</em><br>– Jamila, Manchester</p>
+    
+</section>
+<section style="background-color: #E8F5E9;">
+<div class="section-title">📞 Get in Touch</div>
+      <p>If you have any questions or are ready to start your journey, we’d love to hear from you. Reach out by phone, email, or message us directly.</p>
+      <ul>
+        <li><strong>Email:</strong> info@sequenceeducation.co.uk</li>
+        <li><strong>Phone:</strong> 0203 123 4567</li>
+        <li><strong>WhatsApp:</strong> 07700 900123</li>
+      </ul>
+      <p>Or fill out our quick enquiry form and we’ll get back to you within 24 hours.</p>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="phone">Phone Number:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
+        <button type="submit">Submit</button>
+      </form>
+    
+</section>
+<section style="background-color: #FCE4EC;">
+<div class="section-title">🏫 Our Partner Colleges</div>
+      <p>We work with a range of accredited colleges in the UK that offer university-validated degree programmes. These colleges are trusted institutions that support mature learners and flexible study options.</p>
+      <ul>
+        <li><strong>London School of Commerce (LSC)</strong> – Offers courses validated by University of Suffolk and Canterbury Christ Church University</li>
+        <li><strong>William College</strong> – Delivers undergraduate programmes in law and business</li>
+        <li><strong>Elizabeth School of London</strong> – Partnered with Canterbury Christ Church University</li>
+        <li><strong>London College of Contemporary Arts (LCCA)</strong> – Specialises in creative arts programmes with university affiliations</li>
+      </ul>
+      <p>Our network continues to grow, giving you access to a wide range of locations, courses, and flexible schedules.</p>
+    
+</section>
+<section style="background-color: #FFF3E0;">
+<div class="section-title">❓ Frequently Asked Questions</div>
+      <p><strong>Can I study if I am on benefits?</strong><br>
+      Yes. Being on benefits does not prevent you from studying or receiving student finance. Many of our students are in similar situations, and we help make sure the process is smooth and accessible.</p>
+      <p><strong>Do I need to pay back student finance?</strong><br>
+      You only begin to repay your student finance once you earn over £30,000 per year. If your income is below that threshold, you don’t repay anything.</p>
+      <p><strong>Can I study while working?</strong><br>
+      Yes! Our programmes are designed for adult learners. You can choose flexible study times — either 1 full day or 2 short sessions per week — to fit around your work schedule.</p>
+      <p><strong>What if I haven’t studied in years?</strong><br>
+      That’s okay — many of our students are returning to education after a long break. We offer support from day one and throughout your course.</p>
+      <p><strong>Do I need formal qualifications to apply?</strong><br>
+      No. We work with partner colleges that accept mature students with life or work experience — no A-levels or diplomas required.</p>
+      <p><strong>What support do you offer?</strong><br>
+      We help you from start to finish: application, enrolment, student finance, and even with assignments after you begin your course.</p>
+    
+</section>
+</div>
+<div class="footer">
+    &copy; 2025 Sequence Education Service. All rights reserved.
+  </div>
+</body>
+</html>
